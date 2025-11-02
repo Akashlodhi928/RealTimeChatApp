@@ -24,8 +24,8 @@ export const signUp = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       maxAge: 7 * 24 * 60 * 60 * 1000,
-      sameSite: "lax", // 'lax' allows cookie on top-level navigations (good for refresh)
-      secure: false,   // set true in production (HTTPS)
+      sameSite: "None", // 'lax' allows cookie on top-level navigations (good for refresh)
+      secure: true,   // set true in production (HTTPS)
       path: "/",
     });
 
@@ -51,8 +51,8 @@ export const Login = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       maxAge: 7 * 24 * 60 * 60 * 1000,
-      sameSite: "lax",
-      secure: false,
+      sameSite: "None",
+      secure: true,
       path: "/",
     });
 
