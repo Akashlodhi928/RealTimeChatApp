@@ -17,7 +17,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://realtimechatapp-28vr.onrender.com",
     credentials:true
 }))
 
