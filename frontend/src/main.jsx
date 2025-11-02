@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { store } from './redux/store.js';
 
 // ✅ Local backend URL 
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://realtimechatapp-backend-88m2.onrender.com";
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>   
